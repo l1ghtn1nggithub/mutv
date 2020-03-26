@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/styles.css">
+	<style>
+body {height: 100vh;}
+header {
+  font-size: 64px;
+  text-align: center;
+}
+#todaytitle, #latertitle, #tomorrowtitle {font-size: 48px;}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  border: 4px solid black;
+  text-align: left;
+  padding: 8px;
+  width: 25%;
+}
+img {
+  width: 172px;
+  height: 172px;
+}
+	</style>
+  </head>
+  <body onload="getWeather()">
+	<meta http-equiv="refresh" content="25;url=weatherradar.html">
+	<header>Weather</header>
+	<br>
+	<table>
+	  <tr>
+		<td valign="top">
+		  <div id="todaytitle">Today</div>
+		  <p id="currentweather"></p>
+		  <img id="currentimage" src="">
+		</td>
+		<td valign="top">
+		  <div id="latertitle"></div>
+		  <p id="laterweather"></p>
+		  <img id="laterimage" src="">
+		</td>
+		<td valign="top">
+		  <div id="tomorrowtitle"></div>
+		  <p id="tomorrowweather"></p>
+		  <img id="tomorrowimage" src="">
+		</td>
+	  </tr>
+	</table>
+	<script src="weather.js"></script>
+  </body>
+</html>
